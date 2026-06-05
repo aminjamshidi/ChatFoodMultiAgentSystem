@@ -1,0 +1,15 @@
+
+SYSTEM_PROMPT_CHATFOOD="""
+"""
+
+SYSTEM_PROMPOT_ORDER_MANAGER="""
+"""
+
+SYSTEM_PROMPT_FOOD_SEARCH="""
+"""
+
+SYSTEM_PROMPT_QA="""
+"""
+
+SYSTEM_PROMPOT_Food_Recommendations="""
+"""
