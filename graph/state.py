@@ -1,5 +1,4 @@
-from typing import List
-from typing_extensions import TypedDict,Any
+from typing_extensions import TypedDict
 from langgraph.graph import MessagesState
 
 
@@ -11,8 +10,12 @@ class OrderManagementState(MessagesState):
 class FoodSearchState(MessagesState):
     pass
 
-
-class QAState(MessagesState):
-    pass
+class QAState(TypedDict):
+    
+    query:str
+    reinforced_query:str
+    context:str
+    answer:str
+    
 class FoodRecommendations(MessagesState):
     pass

@@ -1,7 +1,7 @@
 from langchain_core.runnables import RunnableConfig
 
-from graph.state import ChatFoodState,OrderManagementState,FoodSearchState
-from graph.utils.chains import chat_food_cahin,order_management_chain,food_search_chain
+from graph.state import ChatFoodState,OrderManagementState,FoodSearchState,QAState
+from graph.utils.chains import chat_food_cahin,order_management_chain,food_search_chain,QA_chain
 
 
 from settings import settings
@@ -51,7 +51,16 @@ async def tool_call_async(state):
 
 
 
+async def web_search(state:QAState):
+    pass
+
+def search_knowledgebase(state:QAState):
+    pass
+
+async def llm_call_QA(state:QAState):
     
+    response = await QA_chain.ainvoke(state["query"], config)
+    return {"messages": [response]}
 
 
 

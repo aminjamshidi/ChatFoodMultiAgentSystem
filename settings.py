@@ -9,6 +9,7 @@ class Settings(BaseSettings):
     
     REASONING_TEXT_MODEL:str="openai/gpt-oss-120b"
     SMALL_TEXT_MODEL:str="openai/gpt-oss-20b"
+    EMBEDDING_MODEL:str
     
     
    
@@ -16,6 +17,8 @@ class Settings(BaseSettings):
     
     RESTAURANT_DATABASE:str='AGENTFOOD.db'
     ORDER_TABLES_NAME:str='ORDERS'
+    QDRANT_URL:str
+    QDRANT_API_KEY:str
     
     
     ORDER_STATUS:dict[int,str]={

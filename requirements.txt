@@ -1,6 +1,8 @@
+ollama
+qdrant_client
+pydantic_settings
 langchain
 langgraph
 langchain_openai
 langchain_core
-pydantic_settings
 langchain-mcp-adapters

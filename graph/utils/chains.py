@@ -49,3 +49,4 @@ QA_chain=get_chat_model_chain(model=settings.SMALL_TEXT_MODEL,
                               temperature=0.2,
                               variables_name_list=[],
                               tools=[])
+
